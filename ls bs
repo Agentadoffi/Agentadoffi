@@ -1,0 +1,21 @@
+<script>
+    // Charger les données enregistrées dans LocalStorage
+    window.addEventListener('load', () => {
+        pages.forEach((page, index) => {
+            const inputs = page.querySelectorAll('input, textarea, select');
+            inputs.forEach(input => {
+                const savedValue = localStorage.getItem(input.name);
+                if (savedValue) {
+                    input.value = savedValue;
+                }
+            });
+        });
+    });
+
+    // Sauvegarder les données dans LocalStorage en temps réel
+    document.querySelectorAll('input, textarea, select').forEach(input => {
+        input.addEventListener('input', () => {
+            localStorage.setItem(input.name, input.value);
+        });
+    });
+</script>
