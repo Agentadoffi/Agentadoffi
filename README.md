@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on nothing 
 - 📫 How to reach me agentad3 on X
 - 😄 Pronouns: He/him
-- ⚡ Fun fact: I'l a live being believe it or not
+- ⚡ Fun fact: I'm a live being believe it or not
 
 <!---
 Agentadoffi/Agentadoffi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
