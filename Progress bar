@@ -1,0 +1,18 @@
+<div id="progress-container" style="width: 100%; background: #ddd; height: 10px; border-radius: 5px; margin-bottom: 20px;">
+    <div id="progress-bar" style="height: 100%; width: 0%; background: #4caf50; border-radius: 5px;"></div>
+</div>
+
+<script>
+    function updateProgressBar() {
+        const progressBar = document.getElementById('progress-bar');
+        const progress = ((currentPage + 1) / pages.length) * 100;
+        progressBar.style.width = progress + "%";
+    }
+
+    nextButton.addEventListener('click', updateProgressBar);
+    prevButton.addEventListener('click', updateProgressBar);
+
+    updateProgressBar(); // Initial update
+</script> 	
+Validation et souscrip API (AJAX) : 
+<script>
