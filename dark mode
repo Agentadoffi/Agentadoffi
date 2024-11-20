@@ -1,0 +1,15 @@
+<div style="text-align: center; margin-bottom: 20px;">
+    <button id="toggle-theme" style="padding: 10px 20px; font-size: 1rem;">Mode Sombre</button>
+</div>
+<script>
+    const themeButton = document.getElementById('toggle-theme');
+    let isDarkMode = false;
+
+    themeButton.addEventListener('click', () => {
+        document.body.style.background = isDarkMode ? "linear-gradient(135deg, #eceff1, #cfd8dc)" : "#212121";
+        document.body.style.color = isDarkMode ? "#000" : "#fff";
+        document.querySelector('.form-container').style.background = isDarkMode ? "#ffffff" : "#424242";
+        isDarkMode = !isDarkMode;
+        themeButton.textContent = isDarkMode ? "Mode Clair" : "Mode Sombre";
+    });
+</script>
